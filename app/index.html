@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>I like eat — баночки со вкусом</title>
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+	<!-- build:css css/styles.min.css -->
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="js/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<!-- endbuild -->
+
+</head>
+<body>
+	<div id="list">
+		<div class="page-menu">
+			<div class="menu_btn_mob">
+				<div class="menu_btn_mob_top"></div>
+				<div class="menu_btn_mob_bottom"></div>
+			</div>
+			<div class="menu_top">
+				<div class="menu_logo">
+					<img src="img/svg/logo_menu.svg" width="100" alt="">
+				</div>
+				<ul class="menu_list">
+					<li class="menu_li" data-scroll="sets">
+						<div class="menu_icon">
+							<img src="img/svg/menu01.svg" width="50" alt="">
+						</div>
+						<div class="menu_text">Готовые сеты</div>
+					</li>
+					<li class="menu_li" data-scroll="menu">
+						<div class="menu_icon">
+							<img src="img/svg/menu02.svg" width="60" alt="">
+						</div>
+						<div class="menu_text">Блюда в меню</div>
+					</li>
+					<li class="menu_li" data-scroll="delivery">
+						<div class="menu_icon">
+							<img src="img/svg/menu03.svg" width="45" alt="">
+						</div>
+						<div class="menu_text">Оплата и доставка</div>
+					</li>
+				</ul>
+			</div>
+
+			<a href="tel:+79209831000" class="menu_btn">
+				<span class="menu_btn_inner">+7 (920) 983-1000</span>
+			</a>
+
+			<div class="page-menu_mob">
+				<ul class="mob-menu_list">
+					<li class="mob-menu_li">
+						<img src="img/svg/logo_menu.svg" width="66" alt="">
+					</li>
+					<li class="mob-menu_li" data-scroll="sets">
+						<div class="menu_icon">
+							<img src="img/svg/menu01.svg" alt="">
+						</div>
+						<div class="menu_text">Готовые сеты</div>
+					</li>
+					<li class="mob-menu_li" data-scroll="menu">
+						<div class="menu_icon">
+							<img src="img/svg/menu02.svg" alt="">
+						</div>
+						<div class="menu_text">Блюда в меню</div>
+					</li>
+					<li class="mob-menu_li" data-scroll="delivery">
+						<div class="menu_icon">
+							<img src="img/svg/menu03.svg" alt="">
+						</div>
+						<div class="menu_text">Оплата и доставка</div>
+					</li>
+				</ul>
+				<a href="tel:+79209831000" class="mob-menu_btn">
+					<span class="menu_btn_inner">+7 (920) 983-1000</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="cart">
+			<div class="cart_close">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492 492"><path d="M464.344 207.418l.768.168H135.888l103.496-103.724c5.068-5.064 7.848-11.924 7.848-19.124 0-7.2-2.78-14.012-7.848-19.088L223.28 49.538c-5.064-5.064-11.812-7.864-19.008-7.864-7.2 0-13.952 2.78-19.016 7.844L7.844 226.914C2.76 231.998-.02 238.77 0 245.974c-.02 7.244 2.76 14.02 7.844 19.096l177.412 177.412c5.064 5.06 11.812 7.844 19.016 7.844 7.196 0 13.944-2.788 19.008-7.844l16.104-16.112c5.068-5.056 7.848-11.808 7.848-19.008 0-7.196-2.78-13.592-7.848-18.652L134.72 284.406h329.992c14.828 0 27.288-12.78 27.288-27.6v-22.788c0-14.82-12.828-26.6-27.656-26.6z"/></svg>
+			</div>
+			<div class="cart_wrapper">
+				<div class="cart_title">В вашем заказе:</div>
+				<ul class="cart_list"></ul>
+				<div class="cart_descr">Укажите свой телефон и&nbsp;после отправки заказа с&nbsp;вами свяжется наш банкетный менеджер, обсудить где и&nbsp;когда мы&nbsp;устроим вам праздник :)</div>
+				<form>
+					<input type="tel" class="cart_input" id="cart_input" name="cart_input" placeholder="+7-(___)-___-__-__">
+					<!-- <div class="cart_btn">Отправить заказ</div> -->
+					<a href="tel:+79209831000" class="cart_btn">
+						<span class="menu_btn_inner">+7 (920) 983-1000</span>
+					</a>
+				</form>
+			</div>
+
+			<div class="cart_mob">
+				Вы добавили: <b><span class="cart_mob_count">12</span> блюд на <span class="cart_mob_price">202 765</span> ₽</b>
+			</div>
+		</div>
+
+		<div class="page-main">
+			
+			<div class="creative">
+				<div class="container">
+					<div class="creative_title">
+						Новый подход к&nbsp;организации <b>красивых и&nbsp;вкусных фуршетов</b>
+					</div>
+					<div class="creative_title_mob">
+						<div class="creative_title_row">Новый подход</div>
+						<div class="creative_title_row">к организации</div>
+						<div class="creative_title_row">красивых и вкусных</div>
+						<div class="creative_title_row">фуршетов</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- main START -->
+			<div class="main">
+				<div class="container">
+					<div class="header">Наши преимущества</div>
+
+					<div class="feautures">
+						<div class="feautures_img">
+							<img src="img/feautures.jpg" alt="">
+							<div class="carousel_wrap">
+								<div class="carousel_top">
+									<div class="feautures_descr feautures_descr_active" data-feauture="1">
+										<div class="feautures_text bold">Новаторский подход к&nbsp;подаче блюд обеспечивает лучшее сохранение вкусовых качеств продукта</div>
+									</div>
+									<div class="feautures_descr" data-feauture="2">
+										<div class="feautures_text bold">Индивидуальная сервировка создаст атмосферу вашего события</div>
+									</div>
+									<div class="feautures_descr" data-feauture="3">
+										<div class="feautures_text bold">Мы&nbsp;используем экологичные предметы сервировки и&nbsp;работаем только с&nbsp;проверенными поставщиками.</div>
+									</div>
+									<div class="feautures_descr" data-feauture="4">
+										<div class="feautures_text bold">Мы&nbsp;учтем любое ваше пожелание и&nbsp;воплотим его в&nbsp;жизнь в&nbsp;лучшем виде</div>
+									</div>
+								</div>
+							</div>
+							<div class="feautures_descr feautures_descr_active" data-feauture="1">
+								<div class="feautures_text bold">Новаторский подход к&nbsp;подаче блюд обеспечивает лучшее сохранение вкусовых качеств продукта</div>
+							</div>
+							<div class="feautures_descr" data-feauture="2">
+								<div class="feautures_text bold">Индивидуальная сервировка создаст атмосферу вашего события</div>
+							</div>
+							<div class="feautures_descr" data-feauture="3">
+								<div class="feautures_text bold">Мы&nbsp;используем экологичные предметы сервировки и&nbsp;работаем только с&nbsp;проверенными поставщиками.</div>
+							</div>
+							<div class="feautures_descr" data-feauture="4">
+								<div class="feautures_text bold">Мы&nbsp;учтем любое ваше пожелание и&nbsp;воплотим его в&nbsp;жизнь в&nbsp;лучшем виде</div>
+							</div>
+						</div>
+						<ul class="features_list">
+							<li class="feautures_li features_li_active" data-feauture="1">Действительно вкусный кейтеринг</li>
+							<li class="feautures_li" data-feauture="2">Индивидульная сервировка</li>
+							<li class="feautures_li" data-feauture="3">Качество на&nbsp;первом месте</li>
+							<li class="feautures_li" data-feauture="4">Вы&nbsp;&mdash; наше всё</li>
+						</ul>
+						<div class="bg01_l bg"><img src="img/bg/bg01_l.jpg" alt=""></div>
+						<div class="bg01_r bg"><img src="img/bg/bg01_r.jpg" alt=""></div>
+					</div>
+
+					<div class="carousel">
+						<div class="carousel_item">Действительно<br>вкусный кейтеринг</div>
+						<div class="carousel_item">Индивидульная<br>сервировка</div>
+						<div class="carousel_item">Качество<br>на&nbsp;первом месте</div>
+						<div class="carousel_item">Вы&nbsp;&mdash; наше всё</div>
+					</div>
+
+					
+					<!-- items START -->
+					<div class="header" id="sets">Сеты</div>
+
+					<div class="items_wrapper">
+						<div class="items">
+							<div class="items_descr">
+								<div class="item_title">Детский</div>
+								<ul class="item_list">
+									<li class="item_li">Салат Гнездо с&nbsp;куриной грудкой и&nbsp;хрустящим огурчиком</li>
+									<li class="item_li">Сендвич с&nbsp;курицей и&nbsp;свежими овощами</li>
+									<li class="item_li">Медовые яблоки с&nbsp;бисквитом и&nbsp;грецким орехом</li>
+								</ul>
+								<div class="item_price">390 ₽</div>
+								<div class="item_btn" data-count="10" data-description="Описание сета">Добавить в заказ</div>
+							</div>
+							<div class="item_img">
+								<div class="item_title_mob">Детский</div>
+								<div class="item_price_mob">390 ₽</div>
+								<img src="img/item01.png" alt="">
+							</div>
+							<div class="bg02 bg"><img src="img/bg/bg02.jpg" alt=""></div>
+						</div>
+						
+						<div class="items">
+							<div class="items_descr">
+								<div class="item_title">Кофе-брейк</div>
+								<ul class="item_list">
+									<li class="item_li">Салат с&nbsp;куриной грудкой и&nbsp;французским соусом</li>
+									<li class="item_li">Сендвич с&nbsp;ветчиной</li>
+									<li class="item_li">Баннофи</li>
+								</ul>
+								<div class="item_price">470 ₽</div>
+								<div class="item_btn" data-count="10" data-description="Описание сета">Добавить в заказ</div>
+							</div>
+							<div class="item_img">
+								<div class="item_title_mob">Кофе-брейк</div>
+								<div class="item_price_mob">470 ₽</div>
+								<img src="img/item02.png" alt="">
+							</div>
+							<div class="bg03_l bg"><img src="img/bg/bg03_l.jpg" alt=""></div>
+							<div class="bg03_r bg"><img src="img/bg/bg03_r.jpg" alt=""></div>
+						</div>
+						
+						<div class="items">
+							<div class="items_descr">
+								<div class="item_title">Девичник</div>
+								<ul class="item_list">
+									<li class="item_li">Салат Фитнес с&nbsp;куриной грудкой и&nbsp;грейпфруктом</li>
+									<li class="item_li">Пика Моцарелла в&nbsp;медовом конфи</li>
+									<li class="item_li">Брауни с&nbsp;арахисом в&nbsp;карамельном соусе</li>
+								</ul>
+								<div class="item_price">450 ₽</div>
+								<div class="item_btn" data-count="10" data-description="Описание сета">Добавить в заказ</div>
+							</div>
+							<div class="item_img">
+								<div class="item_title_mob">Девичник</div>
+								<div class="item_price_mob">450 ₽</div>
+								<img src="img/item03.png" alt="">
+							</div>
+							<div class="bg04 bg"><img src="img/bg/bg04.jpg" alt=""></div>
+						</div>
+						
+						<div class="items">
+							<div class="items_descr">
+								<div class="item_title">Мужской</div>
+								<ul class="item_list">
+									<li class="item_li">Салат с&nbsp;куриной грудкой и&nbsp;шампиньонами под свежим соусом</li>
+									<li class="item_li">Сендвич Мясной с&nbsp;овощами и&nbsp;картофелем Пай</li>
+									<li class="item_li">Киш с&nbsp;грибами и&nbsp;базиликом</li>
+								</ul>
+								<div class="item_price">480 ₽</div>
+								<div class="item_btn" data-count="10" data-description="Описание сета">Добавить в заказ</div>
+							</div>
+							<div class="item_img">
+								<div class="item_title_mob">Мужской</div>
+								<div class="item_price_mob">480 ₽</div>
+								<img src="img/item04.png" alt="">
+							</div>
+							<div class="bg05 bg"><img src="img/bg/bg05.jpg" alt=""></div>
+						</div>
+						
+						<div class="items">
+							<div class="items_descr">
+								<div class="item_title">Веги</div>
+								<ul class="item_list">
+									<li class="item_li">Салат с&nbsp;шампиньонами и&nbsp;ароматным маслом</li>
+									<li class="item_li">Пика Капрезе</li>
+									<li class="item_li">Тар тар из&nbsp;сезонных фруктов</li>
+								</ul>
+								<div class="item_price">450 ₽</div>
+								<div class="item_btn" data-count="10" data-description="Описание сета">Добавить в заказ</div>
+							</div>
+							<div class="item_img">
+								<div class="item_title_mob">Веги</div>
+								<div class="item_price_mob">450 ₽</div>
+								<img src="img/item05.png" alt="">
+							</div>
+							<div class="bg06_l bg"><img src="img/bg/bg06_l.jpg" alt=""></div>
+
+						</div>
+						<div></div>
+						<div class="bg06_r bg"><img src="img/bg/bg06_r.jpg" alt=""></div>
+						
+						<div class="items">
+							<div class="items_descr">
+								<div class="item_title">Вегетарианский</div>
+								<ul class="item_list">
+									<li class="item_li">Салат Капрезе</li>
+									<li class="item_li">Сендвич из&nbsp;печеных овощей</li>
+									<li class="item_li">Творожный мусс с&nbsp;фруктовым конфи</li>
+								</ul>
+								<div class="item_price">460 ₽</div>
+								<div class="item_btn" data-count="10" data-description="Описание сета">Добавить в заказ</div>
+							</div>
+							<div class="item_img">
+								<div class="item_title_mob">Вегетарианский</div>
+								<div class="item_price_mob">460 ₽</div>
+								<img src="img/item06.png" alt="">
+							</div>
+						</div>
+						<div></div>
+						<div class="bg07_l bg"><img src="img/bg/bg07_l.jpg" alt=""></div>
+						<div></div>
+						<div class="bg07_r bg"><img src="img/bg/bg07_r.jpg" alt=""></div>
+						
+						<div class="items">
+							<div class="items_descr">
+								<div class="item_title">Морской</div>
+								<ul class="item_list">
+									<li class="item_li">Пика лосось с&nbsp;перепелиным яйцом</li>
+									<li class="item_li">Салат Руккола с&nbsp;креветками</li>
+									<li class="item_li">Вишневые жемчужины на&nbsp;венском бисквите</li>
+								</ul>
+								<div class="item_price">520 ₽</div>
+								<div class="item_btn" data-count="10" data-description="Описание сета">Добавить в заказ</div>
+							</div>
+							<div class="item_img">
+								<div class="item_title_mob">Морской</div>
+								<div class="item_price_mob">520 ₽</div>
+								<img src="img/item07.png" alt="">
+							</div>
+							<div class="bg08_l bg"><img src="img/bg/bg08_l.jpg" alt=""></div>
+							<div class="bg08_r bg"><img src="img/bg/bg08_r.jpg" alt=""></div>
+						</div>
+						
+						<div class="items">
+							<div class="items_descr">
+								<div class="item_title">Чисто русский</div>
+								<ul class="item_list">
+									<li class="item_li">Сельдь над шубой</li>
+									<li class="item_li">Краюшка Шпрот с&nbsp;маринованным огурчиком</li>
+									<li class="item_li">Медовые яблоки с&nbsp;бисквитом  и&nbsp;грецкими орехами</li>
+								</ul>
+								<div class="item_price">450 ₽</div>
+								<div class="item_btn" data-count="10" data-description="Описание сета">Добавить в заказ</div>
+							</div>
+							<div class="item_img">
+								<div class="item_title_mob">Чисто русский</div>
+								<div class="item_price_mob">450 ₽</div>
+								<img src="img/item08.png" alt="">
+							</div>
+							<div class="bg09_l bg"><img src="img/bg/bg09_l.jpg" alt=""></div>
+							<div class="bg09_r bg"><img src="img/bg/bg09_r.jpg" alt=""></div>
+						</div>
+						
+						<div class="items">
+							<div class="items_descr">
+								<div class="item_title">Десертный</div>
+								<ul class="item_list">
+									<li class="item_li">Баноффи</li>
+									<li class="item_li">Медовые яблоки с&nbsp;бисквитом и&nbsp;грецким орехом</li>
+									<li class="item_li">Вишневые жемчужины на&nbsp;венском бисквите</li>
+									<li class="item_li">Творожный мусс с&nbsp;фруктовым конфи</li>
+									<li class="item_li">Тартар из&nbsp;сезонных фруктов</li>
+									<li class="item_li">Брауни с&nbsp;арахисом в&nbsp;карамельном соусе</li>
+								</ul>
+								<div class="item_price">480 ₽</div>
+								<div class="item_btn" data-count="10" data-description="Описание сета">Добавить в заказ</div>
+							</div>
+							<div class="item_img">
+								<div class="item_title_mob">Десертный</div>
+								<div class="item_price_mob">480 ₽</div>
+								<img src="img/item09.png" alt="">
+							</div>
+						</div>
+						<div></div>
+						<div class="bg10 bg"><img src="img/bg/bg10.jpg" alt=""></div>
+						
+						<div class="items">
+							<div class="items_descr">
+								<div class="item_title">Фуршет</div>
+								<ul class="item_list">
+									<li class="item_li">Пика Лосось с&nbsp;перепелиным яйцом</li>
+									<li class="item_li">Пика Капрезе</li>
+									<li class="item_li">Пика Мини-моцарелла с&nbsp;медовым конфи</li>
+									<li class="item_li">Пика Свинная вырезка с&nbsp;хрустящим огурчиком</li>
+									<li class="item_li">Киш с&nbsp;грибами и&nbsp;базиликом</li>
+									<li class="item_li">Киш с&nbsp;куриной грудкой и&nbsp;шампиньонами</li>
+								</ul>
+								<div class="item_price">380 ₽</div>
+								<div class="item_btn" data-count="10" data-description="Описание сета">Добавить в заказ</div>
+							</div>
+							<div class="item_img">
+								<div class="item_title_mob">Фуршет</div>
+								<div class="item_price_mob">380 ₽</div>
+								<img src="img/item10.png" alt="">
+							</div>
+						<div class="bg11_l bg"><img src="img/bg/bg11_l.jpg" alt=""></div>
+						<div class="bg11_r bg"><img src="img/bg/bg11_r.jpg" alt=""></div>
+						</div>
+					</div>
+					<!-- items END -->
+				</div>
+				<div class="container menu_container">
+					
+					<!-- menu START -->
+					<div class="header" id="menu">МЕНЮ</div>
+
+					<ul class="menu_nav">
+						<li class="menu_nav_item" data-type="type1">Мясные<div class="menu_nav_remove"><svg width="9" height="8" viewport="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g stroke="#333333" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M1.278 7.278L8.293.263M1.243.243l7.035 7.035"/></g></svg></div></li>
+						<li class="menu_nav_item" data-type="type2">Морепродукты<div class="menu_nav_remove"><svg width="9" height="8" viewport="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g stroke="#333333" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M1.278 7.278L8.293.263M1.243.243l7.035 7.035"/></g></svg></div></li>
+						<li class="menu_nav_item" data-type="type3">Десертные<div class="menu_nav_remove"><svg width="9" height="8" viewport="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g stroke="#333333" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M1.278 7.278L8.293.263M1.243.243l7.035 7.035"/></g></svg></div></li>
+						<li class="menu_nav_item" data-type="type4">Салаты<div class="menu_nav_remove"><svg width="9" height="8" viewport="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g stroke="#333333" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M1.278 7.278L8.293.263M1.243.243l7.035 7.035"/></g></svg></div></li>
+						<li class="menu_nav_item" data-type="type5">Вегетарианские<div class="menu_nav_remove"><svg width="9" height="8" viewport="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g stroke="#333333" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M1.278 7.278L8.293.263M1.243.243l7.035 7.035"/></g></svg></div></li>
+						<li class="menu_nav_item" data-type="type6">Сендвич<div class="menu_nav_remove"><svg width="9" height="8" viewport="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g stroke="#333333" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M1.278 7.278L8.293.263M1.243.243l7.035 7.035"/></g></svg></div></li>
+						<li class="menu_nav_item" data-type="type7">Пика<div class="menu_nav_remove"><svg width="9" height="8" viewport="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g stroke="#333333" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M1.278 7.278L8.293.263M1.243.243l7.035 7.035"/></g></svg></div></li>
+						<li class="menu_nav_item" data-type="type8">Веган<div class="menu_nav_remove"><svg width="9" height="8" viewport="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g stroke="#333333" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M1.278 7.278L8.293.263M1.243.243l7.035 7.035"/></g></svg></div></li>
+						<li class="menu_nav_item" data-type="type9">Птица<div class="menu_nav_remove"><svg width="9" height="8" viewport="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g stroke="#333333" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M1.278 7.278L8.293.263M1.243.243l7.035 7.035"/></g></svg></div></li>
+					</ul>
+
+					<div class="menu">
+						<div class="menu_item_wrapper type4">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu01.jpg" alt="">
+								</div>
+								<div class="menu_item_title menu_mob_md">Салат с&nbsp;куриной грудкой и&nbsp;французским соусом</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">165 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="menu_item_wrapper type4 type2">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu02.jpg" alt="">
+								</div>
+								<div class="menu_item_title menu_mob_md">Салат Руккола с&nbsp;креветками</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">195 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="menu_item_wrapper type4">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu03.jpg" alt="">
+								</div>
+								<div class="menu_item_title">Сельдь над шубой</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">165 ₽</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="menu_item_wrapper type4 type9">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu04.jpg" alt="">
+								</div>
+								<div class="menu_item_title">Салат Гнездо с&nbsp;куриной<br>грудкой и&nbsp;хрустящим огурчиком</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">165 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="menu_item_wrapper type9 type6">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu05.jpg" alt="">
+								</div>
+								<div class="menu_item_title">Сендвич с&nbsp;курицей и&nbsp;свежими овощами</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">185 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="menu_item_wrapper type5 type3">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu06.jpg" alt="">
+								</div>
+								<div class="menu_item_title">Медовые яблоки с&nbsp;бисквитом и&nbsp;грецким орехом</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">155 ₽</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="menu_item_wrapper type1 type6">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu07.jpg" alt="">
+								</div>
+								<div class="menu_item_title menu_mob_sm">Сендвич с&nbsp;ветчиной</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">185 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="menu_item_wrapper type3 type5">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu08.jpg" alt="">
+								</div>
+								<div class="menu_item_title menu_mob_sm">Баннофи</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">155 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="menu_item_wrapper type4 type9">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu09.jpg" alt="">
+								</div>
+								<div class="menu_item_title menu_mob_md">Салат Фитнес с&nbsp;куриной<br>грудкой и&nbsp;грейпфрутом</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">165 ₽</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="menu_item_wrapper type7 type5">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu10.jpg" alt="">
+								</div>
+								<div class="menu_item_title menu_mob_md">Пика Мини-моцарелла<br>с&nbsp;медовым конфи</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">155 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="menu_item_wrapper type3 type5">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu11.jpg" alt="">
+								</div>
+								<div class="menu_item_title menu_mob_md">Брауни с&nbsp;арахисом в&nbsp;карамельном соусе</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">155 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="menu_item_wrapper type7 type1">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu12.jpg" alt="">
+								</div>
+								<div class="menu_item_title menu_mob_md">Пика Свиная вырезка с&nbsp;хрустящим огурчиком</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">155 ₽</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="menu_item_wrapper type6 type1">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu13.jpg" alt="">
+								</div>
+								<div class="menu_item_title">Сендвич Мясной с&nbsp;овощами и&nbsp;картофелем Пай</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">185 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="menu_item_wrapper type5">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu14.jpg" alt="">
+								</div>
+								<div class="menu_item_title">Киш с&nbsp;грибами и&nbsp;базиликом</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">105 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="menu_item_wrapper type4 type8">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu15.jpg" alt="">
+								</div>
+								<div class="menu_item_title menu_mob_md">Салат с&nbsp;шампиньонами и&nbsp;ароматным маслом</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">165 ₽</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="menu_item_wrapper type7 type5">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu16.jpg" alt="">
+								</div>
+								<div class="menu_item_title menu_mob_md">Пика Капрезе</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">155 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="menu_item_wrapper type3 type5 type8">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu17.jpg" alt="">
+								</div>
+								<div class="menu_item_title menu_mob_md">Тар тар из&nbsp;сезонных фруктов</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">165 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="menu_item_wrapper type4 type5">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu18.jpg" alt="">
+								</div>
+								<div class="menu_item_title menu_mob_md">Салат Капрезе</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">165 ₽</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="menu_item_wrapper type6 type5">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu19.jpg" alt="">
+								</div>
+								<div class="menu_item_title menu_mob_md">Сендвич из&nbsp;печеных овощей</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">185 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="menu_item_wrapper type3 type5">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu20.jpg" alt="">
+								</div>
+								<div class="menu_item_title menu_mob_md">Творожный мусс с&nbsp;фруктовым конфи</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">155 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="menu_item_wrapper type7 type2">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu21.jpg" alt="">
+								</div>
+								<div class="menu_item_title menu_mob_md">Пика Лосось<br>с&nbsp;перепелиным яйцом</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">155 ₽</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="menu_item_wrapper type3 type5">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu22.jpg" alt="">
+								</div>
+								<div class="menu_item_title menu_mob_md">Вишневые жемчужины на&nbsp;венском бисквите</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">155 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="menu_item_wrapper type6">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu23.jpg" alt="">
+								</div>
+								<div class="menu_item_title">Краюшка Шпрот с&nbsp;маринованным огурчиком</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">185 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="menu_item_wrapper type9">
+							<div class="menu_item">
+								<div class="menu_img">
+									<img src="img/menu24.jpg" alt="">
+								</div>
+								<div class="menu_item_title">Киш с&nbsp;куриной грудкой и&nbsp;шампиньонами</div>
+								<div class="menu_item_descr">
+									<div class="menu_item_btn" data-count="3" data-description="Описание банки">Добавить</div>
+									<div class="menu_item_price">120 ₽</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- menu END -->
+
+				</div>
+			</div>
+			<!-- main END -->
+
+			<!-- description START -->
+			<div class="description">
+				<div class="container">
+					<div class="description_row">
+						<div class="description_item">
+							<div class="description_title" id="delivery">Оплата</div>
+							<ul class="description_list">
+								<li class="description_li">Мы&nbsp;работаем по&nbsp;50% предоплате, которая должна быть осуществлена не&nbsp;менее, чем за&nbsp;4&nbsp;рабочих дня до&nbsp;мероприятия. Остальная оплата вносится в&nbsp;момент получения заказа (перед началом мероприятия);</li>
+								<li class="description_li">Оплата производится банковской картой или&nbsp;наличным расчетом;</li>
+								<li class="description_li">Для юридических лиц выставляется счет на&nbsp;оплату, по&nbsp;завершении мероприятия предоставляются закрывающие документы.</li>
+							</ul>
+						</div>
+						
+						<div class="description_item">
+							<div class="description_title">Доставка</div>
+							<ul class="description_list">
+								<li class="description_li">Доставка бесплатна при заказе от&nbsp;15&nbsp;000&nbsp;₽ в&nbsp;пределах города Рязани;</li>
+								<li class="description_li">Минимальный заказ 5&nbsp;000&nbsp;₽;</li>
+								<li class="description_li">При заказе комплекса доставки мы&nbsp;привезем ваш заказ, сервируем красиво и&nbsp;оригинально стол, приедем за&nbsp;баночками и&nbsp;декором стола после мероприятия;</li>
+								<li class="description_li">Стоимость комплекса услуг по&nbsp;доставке зависит от&nbsp;месторасположения.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- description END -->
+
+			<!-- footer START -->
+			<div class="footer">
+				<div class="container">
+					<div class="footer_item">
+						<div class="footer_descr">
+							<div class="footer_text">Новый подход к&nbsp;организации красивых и&nbsp;вкусных фуршетов</div>
+							<a href="tel:+79209831000" class="footer_btn">
+								<span class="footer_btn_inner">+7 (920) 983-1000</span>
+							</a>
+							<div class="footer_copy">&copy;&nbsp;Ilikeat, 2018.</div>
+						</div>
+					</div>
+
+					<div class="footer_item">
+						<div class="footer_nav">
+							<div class="footer_img">
+								<img src="img/footer.png" alt="">
+							</div>
+							<div class="footer_nav_title">Готовые сеты:</div>
+							<ul class="footer_list">
+								<li class="footer_li"><a href="#">Детский</a></li>
+								<li class="footer_li"><a href="#">Кофе-брейк</a></li>
+								<li class="footer_li"><a href="#">Девичник</a></li>
+								<li class="footer_li"><a href="#">Мужской</a></li>
+								<li class="footer_li"><a href="#">Веги</a></li>
+								<li class="footer_li"><a href="#">Морской</a></li>
+								<li class="footer_li"><a href="#">Русский</a></li>
+								<li class="footer_li"><a href="#">Десертный</a></li>
+								<li class="footer_li"><a href="#">Фуршет</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- footer END -->
+
+		</div>
+	</div>
+
+	<div class="popup">
+		<div class="popup_close">
+			<svg width="20" height="20" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><g stroke="#333333" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M1.278 7.278L8.293.263M1.243.243l7.035 7.035"/></g></svg>
+		</div>
+		<div class="popup_text">Укажите свой телефон и&nbsp;после отправки заказа с&nbsp;вами свяжется наш банкетный менеджер, обсудить где и&nbsp;когда мы&nbsp;устроим вам праздник :)</div>
+	</div>
+	<div class="overflow"></div>
+
+	<!-- build:js js/main.min.js -->
+	<script src="js/jquery.min.js"></script>
+
+	<script src="js/slick.min.js"></script>
+
+	<script src="js/inputmask.min.js"></script>
+	<script src="js/jquery.inputmask.js"></script>
+
+	<script src="js/jquery.waypoints.min.js"></script>
+
+	<script src="js/common.js"></script>
+	<!-- endbuild -->
+</body>
+</html>
