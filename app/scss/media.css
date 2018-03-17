@@ -820,11 +820,7 @@
 		margin-bottom: 15px;
 	}
 	.cart_close {
-		-webkit-transform: rotate(180deg);
-		-ms-transform: rotate(180deg);
-		-o-transform: rotate(180deg);
-		-moz-transform: rotate(180deg);
-		     transform: rotate(180deg);
+   transform: rotate(90deg);
 		border: 1px solid #fff;
 		width: 30px;
 		height: 30px;
@@ -837,10 +833,13 @@
 		top: 10px;
 		fill:#fff;
 	}
+	.cart_closed .cart_close {
+		transform: rotate(-90deg);
+	}
 	.cart_close svg {
 		width: 20px;
 		position: relative;
-		top: 3px;
+		top: 4px;
 	}
 	.cart_close object {
 		color-fill:#fff;

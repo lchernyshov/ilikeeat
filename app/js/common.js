@@ -210,6 +210,16 @@ $(function() {
 			price += +$(this).find('.count_num').text().slice(1) * $(this).find('.count_num').data('price');
 		})
 		$('.cart_mob_price').text(price);
+
+		if( $('.cart_mob_count').text() < 20 && $('.cart_mob_count').text() > 10 ) {
+			$('.cart_mob_letter').text('');
+		} else if( $('.cart_mob_count').text().substr(-1) == 1 && $('.cart_mob_count').text() > 20 ) {
+			$('.cart_mob_letter').text('о');
+		} else if( $('.cart_mob_count').text().substr(-1) == 2 || $('.cart_mob_count').text().substr(-1) == 3 || $('.cart_mob_count').text().substr(-1) == 4 ) {
+			$('.cart_mob_letter').text('а');
+		} else {
+			$('.cart_mob_letter').text('');
+		}
 	}
 
 
@@ -258,10 +268,12 @@ $(function() {
 
 	// menu scroll
 	$('.menu_li, .mob-menu_li').click(function() {
-		$('.page-menu_mob, .menu_btn_mob').removeClass('opened')
-		var scroll_el = $(this).data('scroll');
-			$('html, body').animate({ scrollTop: $('#' + scroll_el).offset().top - 60 }, 500);
-		return false;
+		if( $(this).data('scroll')  ) {
+			$('.page-menu_mob, .menu_btn_mob').removeClass('opened')
+			var scroll_el = $(this).data('scroll');
+				$('html, body').animate({ scrollTop: $('#' + scroll_el).offset().top - 60 }, 500);
+			return false;
+		}
 	});
 
 	// filter
