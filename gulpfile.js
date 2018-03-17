@@ -52,8 +52,7 @@ gulp.task('images', function(){
 	.pipe(cache(imagemin({
 		interlaced: true,
 		progressive: true,
-		optimizationLevel: 5,
-		optipng: [{optimizationLevel: 7}]
+		optimizationLevel: 5
 	})))
 	.pipe(gulp.dest('docs/img'))
 });

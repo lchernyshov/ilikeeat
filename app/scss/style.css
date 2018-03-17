@@ -674,6 +674,7 @@ body {
 	transition: transform 1.2s, opacity 1.5s;
 	transition-timing-function: ease-in-out;
 }
+
 .items:nth-child(even) .items_descr {
 	transform: translateX(30px) translateY(30px);
 	opacity: 0;
