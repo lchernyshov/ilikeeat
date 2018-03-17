@@ -299,36 +299,36 @@ $(function() {
 	$('.cart_input').inputmask('+7-(999)-999-99-99',{'oncomplete':function(){ isChecked = 1; }});
 
 	// send
-	$('.cart_btn').click(function() {
-		if(isChecked) {
-			var i = 1;
-			var hiddenForm = document.createElement('form');
-			$('#list').append(hiddenForm);
-			$(hiddenForm).addClass('hidden hidden_form');
-			$('.cart_item_name').each(function() {
-				var count = $(this).siblings('.cart_item_count').children('.count_num').text();
+	// $('.cart_btn').click(function() {
+	// 	if(isChecked) {
+	// 		var i = 1;
+	// 		var hiddenForm = document.createElement('form');
+	// 		$('#list').append(hiddenForm);
+	// 		$(hiddenForm).addClass('hidden hidden_form');
+	// 		$('.cart_item_name').each(function() {
+	// 			var count = $(this).siblings('.cart_item_count').children('.count_num').text();
 
-				var input = document.createElement('input');
-				$(input).addClass('hidden').attr('name', $(this).text()).attr('value', count).val( count );
-				$(hiddenForm).append(input);
-				i++;
-			});
+	// 			var input = document.createElement('input');
+	// 			$(input).addClass('hidden').attr('name', $(this).text()).attr('value', count).val( count );
+	// 			$(hiddenForm).append(input);
+	// 			i++;
+	// 		});
 
-			var phoneNum = document.createElement('input');
-			$(phoneNum).addClass('hidden').attr('name', 'Телефон:').attr('value', $('.cart_input').val()).val( $('.cart_input').val() );
-			$(hiddenForm).append(phoneNum);
+	// 		var phoneNum = document.createElement('input');
+	// 		$(phoneNum).addClass('hidden').attr('name', 'Телефон:').attr('value', $('.cart_input').val()).val( $('.cart_input').val() );
+	// 		$(hiddenForm).append(phoneNum);
 
-			var data = $('.hidden_form').serialize();
-			$.ajax({
-				method: 'post',
-				data: data,
-				url: 'mail.php'
-			}).done(function(response) {
-				popup_open();
-			});
-		}
-		return false;
-	});
+	// 		var data = $('.hidden_form').serialize();
+	// 		$.ajax({
+	// 			method: 'post',
+	// 			data: data,
+	// 			url: 'mail.php'
+	// 		}).done(function(response) {
+	// 			popup_open();
+	// 		});
+	// 	}
+	// 	return false;
+	// });
 
 	// popup
 	var win_top = 0;
