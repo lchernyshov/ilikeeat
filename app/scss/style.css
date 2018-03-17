@@ -133,6 +133,15 @@ body {
 .menu_icon {
 	margin-bottom: 5px;
 }
+.menu_icon img {
+	cursor: pointer;
+	-webkit-transition: transform 0.3s;
+	-o-transition: transform 0.3s;
+	transition: transform 0.3s;
+}
+.menu_icon img:hover {
+	transform: scale(1.2);
+}
 .menu_list {
 	margin-bottom: 30px;
 }
