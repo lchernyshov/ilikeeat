@@ -99,6 +99,9 @@ $(function() {
 		var th = $(this);
 		$('.cart_lorem').remove();
 
+		$('.cart').addClass('cart_opened').removeClass('cart_closed');
+		$('.cart_wrapper').slideDown();
+
 		if( $('.cart_item').length ) {
 			var checked = 0;
 
