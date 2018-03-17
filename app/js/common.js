@@ -55,14 +55,9 @@ $(function() {
 	});
 
 	$('.cart_close').click(function() {
-		if( $('.cart').hasClass('cart_opened') ) {
-			$('.cart').removeClass('cart_opened').addClass('cart_closed');
-			$('.cart_wrapper').slideUp();
-		} else {
-			$('.cart_wrapper').slideDown();
-			$('.cart').removeClass('cart_closed').addClass('cart_opened');
-		}
+		$('.cart').toggleClass('cart_closed cart_opened');
 		if( $('.cart_item').length ) {
+			$('.cart_wrapper').slideToggle();
 			$('.cart_lorem').remove();
 		} else {
 			if( !$('.cart_lorem').length ) {
@@ -75,16 +70,6 @@ $(function() {
 		}
 	});
 
-	$(document).on('click', function(e) {
-		if( !($(e.target).parents('.cart_opened')[0] || $($(e.target)[0]).hasClass('cart_opened') || $($(e.target)[0]).hasClass('count_down') ) && !($($(e.target)[0]).hasClass('menu_item_btn')) && !($($(e.target)[0]).hasClass('item_btn')) ) {
-			if( $('.cart').hasClass('cart_opened') ) {
-				$('.cart').removeClass('cart_opened').addClass('cart_closed');
-				$('.cart_wrapper').slideUp();
-			}
-		}
-	});
-
-
 	$('.menu_btn_mob').click(function() {
 		if( $(this).hasClass('opened') ) {
 			$(this).removeClass('opened');
@@ -94,13 +79,21 @@ $(function() {
 			$('.page-menu_mob').addClass('opened');
 		}
 	});
+	$(document).on('click', function(e) {
+		if( !($(e.target).parents('.page-menu')[0]) ) {
+			$('.menu_btn_mob').removeClass('opened');
+			$('.page-menu_mob').removeClass('opened');
+		}
+	})
 
 	$('.item_btn, .menu_item_btn').click(function() {
 		var th = $(this);
 		$('.cart_lorem').remove();
 
-		$('.cart').addClass('cart_opened').removeClass('cart_closed');
-		$('.cart_wrapper').slideDown();
+		if( width > 768 ) {
+			$('.cart').addClass('cart_opened').removeClass('cart_closed');
+			$('.cart_wrapper').slideDown();
+		}
 
 		if( $('.cart_item').length ) {
 			var checked = 0;
@@ -143,9 +136,9 @@ $(function() {
 		
 
 		function createItem() {
-			$('.cart').addClass('cart_opened').removeClass('cart_closed');
-			$('.cart_wrapper').slideDown();
-
+			if( !$('.cart_item').length ) {
+				$('.cart').addClass('cart_opened').removeClass('cart_closed');
+			}
 			if( width < 769 ) {
 				$('.cart').removeClass('cart_opened').addClass('cart_closed');
 				$('.cart_wrapper').hide();
