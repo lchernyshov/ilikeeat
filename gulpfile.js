@@ -50,8 +50,11 @@ gulp.task('useref', function() {
 gulp.task('images', function(){
 	return gulp.src('app/img/**/*')
 	.pipe(cache(imagemin({
-			optipng: [{optimizationLevel: 7}]
-		})))
+		interlaced: true,
+		progressive: true,
+		optimizationLevel: 5,
+		optipng: [{optimizationLevel: 7}]
+	})))
 	.pipe(gulp.dest('docs/img'))
 });
 
