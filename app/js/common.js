@@ -133,8 +133,6 @@ $(function() {
 			createItem();
 		}
 
-		
-
 		function createItem() {
 			if( !$('.cart_item').length ) {
 				$('.cart').addClass('cart_opened').removeClass('cart_closed');
@@ -241,7 +239,7 @@ $(function() {
 					$('.cart_wrapper').slideToggle();
 				}
 			}
-		} else if ( num == 3 && $(this).parents('.cart_item').hasClass('byThree') ) {
+		} else if ( num == 5 && $(this).parents('.cart_item').hasClass('byThree') ) {
 			$(this).parents('.cart_item').remove();
 			if( !$('.cart_item').length ) {
 				$('.cart').addClass('cart_closed').removeClass('cart_opened');
