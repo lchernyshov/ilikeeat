@@ -655,7 +655,8 @@
     -webkit-transform: scale(0.7);
     -ms-transform: scale(0.7);
     -o-transform: scale(0.7);
-    transform: scale(0.7); }
+    transform: scale(0.7);
+    display: none !important; }
   .bg02 {
     left: auto;
     bottom: auto;
